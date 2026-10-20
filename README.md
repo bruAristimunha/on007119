@@ -20,7 +20,7 @@ Rows were matched to header channels BY NAME, never by position (exact; then cas
 
 144 channels.tsv rows had no channel in the data file (14 files) and were removed; they are kept verbatim under `sourcedata/channels-removed-2026-10-18/` (same relative path). Examples: `sub-151_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: A57, A58, A59, A60, A61; `sub-162_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: C1, C2, C3, C4, C5; `sub-185_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: C1, C2, C3, C4, C5.
 
-Removed rows that carry a note in their name (kept in sourcedata, please check): `sub-222_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: `N1?硬膜外?要チェックin EEG`; `sub-222_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: `N2?硬膜外?要チェックin EEG`; `sub-222_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: `N3?硬膜外?要チェックin EEG`; `sub-222_ses-01_task-sleep_acq-A_run-01_ieeg.edf`: `N4?硬膜外?要チェックin EEG`.
+Four removed rows of `sub-222_ses-01_task-sleep_acq-A_run-01_ieeg.edf` (N1-N4) carried a free-text clinical annotation in their channel name. In the copy kept in sourcedata the annotation is redacted (names `N1(redacted)` to `N4(redacted)`); the rows are otherwise unchanged.
 
 1 files listed the channels in another order than the header; rows now follow the header order.
 
